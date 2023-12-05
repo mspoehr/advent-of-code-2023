@@ -1,0 +1,89 @@
+seeds: 79 14 55 13
+
+# valid starting seeds (inclusive):
+# 55 to 67, 79 to 92
+
+
+seed-to-soil map:
+# added
+0 0 50
+52 50 48
+50 98 2
+# added
+100 100 5000
+
+# valid input ranges (inclusive):
+# explicit: 50 to 99
+# implicit: 0 to 99
+# intersection with previous outputs: 55 to 67, 79 to 92
+# lowest possible outputs for each pair: 57, None, 
+# possible output ranges: 57 to 69, None, 81 to 94, None
+
+
+soil-to-fertilizer map:
+39 0 15
+0 15 37
+37 52 2
+# added
+54 54 5000
+
+# valid input ranges (inclusive):
+# 0 to 53
+
+
+fertilizer-to-water map:
+42 0 7
+57 7 4
+0 11 42
+49 53 8
+# added
+60 60 5000
+
+# valid input ranges (inclusive):
+# 0 to 60
+
+
+water-to-light map:
+# added
+0 0 25
+88 18 7
+18 25 70
+# added
+94 94 5000
+
+# valid input ranges (inclusive):
+# 25 to 94
+
+
+light-to-temperature map:
+# added
+0 0 45
+81 45 19
+68 64 13
+45 77 23
+# added
+100 100 5000
+
+# valid input ranges (inclusive):
+# 45 to 99
+
+
+temperature-to-humidity map:
+0 69 1
+1 0 69
+# added
+70 70 5000
+
+# valid input ranges (inclusive):
+# 0 to 69
+
+
+humidity-to-location map:
+# added
+0 0 56
+60 56 37
+56 93 4
+97 97 5000
+
+# valid input ranges (inclusive):
+# 56 to 96
